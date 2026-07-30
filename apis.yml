@@ -1,7 +1,25 @@
 aid: mayflower
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mayflower.png
 name: Mayflower
-description: Mayflower is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Mayflower is an early-stage (Y Combinator, Fall 2025) startup building an AI-powered HR plug-in
+  that automates immigration screening, visa eligibility assessment, and compliance for international hiring.
+  The platform parses candidate documents, classifies visa pathways, and generates attorney-ready forms,
+  integrating directly with existing HR systems so companies can surface only compliant candidates and
+  reduce legal risk. Founded in 2025 by Naren Chittem and Aryan Gulati and based in San Francisco, the
+  company currently operates a marketing landing page with a book-a-call motion and publishes no public
+  API, developer documentation, SDKs, or GitHub organization. This profile was added to the API Evangelist
+  network as a Y Combinator portfolio lead; the enrichment pipeline found no API surface to harvest.
 url: https://raw.githubusercontent.com/api-evangelist/mayflower/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +29,28 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Immigration
+- HR Tech
+- Compliance
+- Visa
+- Artificial Intelligence
+- Y Combinator
 apis: []
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+common:
+- type: DomainSecurity
+  url: security/mayflower-domain-security.yml
+- type: Website
+  url: https://mayflowervisa.com
+- type: X
+  url: https://x.com/mayflowervisa
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
